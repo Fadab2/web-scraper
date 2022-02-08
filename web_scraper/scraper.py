@@ -31,23 +31,6 @@ def get_citations_needed_count(url):
 
  
 
-# anchors = results('a')
-# #print(anchors)
-# links = [anchor['href'] for anchor in anchors]
-# citation_link = links[0]
-# # for link in links:
-# #     print(link)
-# #print(citation_link)
-
-
-# citation_url = 'https://en.wikipedia.org/wiki/Triple_J#1970s:_Launch_and_early_years' + citation_link
-
-# #print(citation_url)
-
-# citation_content = requests.get(citation_url)
-
-# content_soup = BeautifulSoup(citation_content.content, 'html.parser')
-# #print(citation_content.content)
 
 def get_citations_needed_report(url):
     relevant_passage = []
