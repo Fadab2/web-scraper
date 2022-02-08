@@ -25,8 +25,9 @@ def get_citations_needed_count(url):
     # loop through and increment the citation needed count.
     for count in results:
         citation_needed_count= citation_needed_count + 1
+       
     
-    return citation_needed_count
+    return f'Total citations needed:  {citation_needed_count}'
 
  
 
@@ -63,9 +64,10 @@ def get_citations_needed_report(url):
     for passage in results:
         if passage.string == need_citation:
             find_prev = passage.find_parents("p")
+            find_prev = print(str(find_prev)[4:100], "\n")
             relevant_passage.append(find_prev)
 
-    return str(relevant_passage)
+    return relevant_passage
 
 
 
